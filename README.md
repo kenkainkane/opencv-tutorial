@@ -7,7 +7,8 @@
 3. For Python2.7
   * Go to "C:\opencv\build\python\2.7\x64"
   * copy cv2.py and place in "C:\Users\Anaconda2\Lib\site-packages"
-   For Python3.6
+
+For Python3.6
   * Open command prompt and type :
     ```
     $ pip install opencv-python
