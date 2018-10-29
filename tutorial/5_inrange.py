@@ -14,6 +14,7 @@ upper = np.array([200, 255, 255])
 # แปลงเป็นภาพ Binary โดยช่วงที่อยู่ใน range จะเป็น 1
 mask = cv2.inRange(img, lower, upper)
 
+cv2.imshow('Color Space HSV', hsv)
 cv2.imshow('inrange', mask)
 cv2.waitKey()
 cv2.destroyAllWindows()
