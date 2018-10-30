@@ -19,5 +19,13 @@ cv2.imshow('Or', Or)
 cv2.imshow('Xor', Xor)
 cv2.imshow('Not', Not)
 
+# ย้ายหน้าต่าง เพื่อให้ดูง่าย
+cv2.moveWindow('square',0,0)
+cv2.moveWindow('circle',512,0)
+cv2.moveWindow('And',1024,0)
+cv2.moveWindow('Or',0,512)
+cv2.moveWindow('Xor',512,512)
+cv2.moveWindow('Not',1024,512)
+
 cv2.waitKey()
 cv2.destroyAllWindows()
