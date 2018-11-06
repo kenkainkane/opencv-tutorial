@@ -4,7 +4,7 @@ import numpy as np
 
 img = cv2.imread('../images/apple.jpg')
 
-# real object ควรใช้ Color Space HSV เนื่องจากมีค่าแสงมาเกี่ยวข้อง
+# real object ควรใช้ Color Space HSV เนื่องจากมีค่าจากสภาพแวดล้อมเข้ามาเกี่ยวข้อง
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 # กำหนดช่วงสีของ Object
