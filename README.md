@@ -15,11 +15,17 @@
     ```
 ## MacOS Installation
 1. Install Xcode
-  ```sudo xcode-select --install```
+  ```
+  sudo xcode-select --install
+  ```
 2. Install homebrew and add the following line to the end of ~/.bashrc
-  ```export PATH=/usr/local/bin:$PATH```
+  ```
+  export PATH=/usr/local/bin:$PATH
+  ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use source command to load the changes in corresponding file.
-  ```source ~/.bashrc```
+  ```
+  source ~/.bashrc
+  ```
 3. Install Python
   ```
   brew install python python3
