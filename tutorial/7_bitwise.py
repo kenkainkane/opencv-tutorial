@@ -7,7 +7,7 @@ square = cv2.rectangle(img.copy(), (80, 80), (431, 431), (255, 255, 255), -1)
 circle = cv2.circle(img.copy(), (255, 255), 230, (255, 255, 255), -1)
 
 # ใช้ arithmetic operation
-And = cv2.bitwise_and(square, circle)
+And = cv2.bitwise_and(square, circle, img)
 Or = cv2.bitwise_or(square, circle)
 Xor = cv2.bitwise_xor(square, circle)
 Not = cv2.bitwise_not(square)

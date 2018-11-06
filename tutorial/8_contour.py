@@ -19,21 +19,18 @@ for cnt in contours :
 # เราสามารถรู้ contours area
     area = cv2.contourArea(cnt)
 
-# สร้าง condition เพื่อตัด noise
-    if area > 100 :
-
 # วาดสี่เหลี่ยมที่เล็กที่สุดที่ล้อมรอบ contours
-        rect = cv2.minAreaRect(cnt)
-        box = cv2.boxPoints(rect)
-        box = np.int0(box)
-        cv2.drawContours(result,[box],0,(0,0,255),2)
+    rect = cv2.minAreaRect(cnt)
+    box = cv2.boxPoints(rect)
+    box = np.int0(box)
+    cv2.drawContours(result,[box],0,(0,0,255),2)
 
 # ศูนย์กลาง, ความกว้าง/ยาว และ มุม จาก minAreaRect
-        center, wh, angle = cv2.minAreaRect(cnt)
-        print('Area', area)
-        print('Center',center)
-        print('width, height', wh)
-        print('Angle', angle)
+    center, wh, angle = cv2.minAreaRect(cnt)
+    print('Area', area)
+    print('Center',center)
+    print('width, height', wh)
+    print('Angle', angle)
 
 cv2.imshow('result', result)
 cv2.imshow('contours',img)
